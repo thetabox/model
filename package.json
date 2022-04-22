@@ -1,0 +1,20 @@
+{
+	"name": "@thetabox/model",
+	"version": "0.0.42",
+	"description": "thetabox model",
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"deploy": "rm -r ./lib &&  tsc && bump && npm publish --access public"
+	},
+	"author": "thetabox",
+	"license": "ISC",
+	"devDependencies": {
+		"typescript": "^4.4.2",
+		"version-bump-prompt": "^6.1.0"
+	},
+	"dependencies": {
+		"@types/fluent-ffmpeg": "^2.1.20"
+	}
+}
